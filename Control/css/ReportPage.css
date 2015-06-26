@@ -1,0 +1,211 @@
+﻿body {
+    margin: 0;
+    padding: 0;
+    background-color: #F0F0F0;
+    font: 12pt 'Arial';
+}
+
+* {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+.displayNone {
+    display: none;
+}
+
+p {
+    margin-bottom: 0px;
+}
+
+.page {
+    width: 21.6cm;
+    height: 27.9cm;
+    padding: 1cm;
+    margin: 1cm auto;
+    background: white;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.pageFrame {
+    height: 100%;
+    width: 100%;
+    padding: 0.5cm;
+    border: 1px black solid;
+}
+
+#secondPage {
+    display: none;
+    text-align: center;
+}
+
+.centererClass {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+
+#topFrame, #topFrame_P2 {
+    width: 100%;
+    height: 14%;
+    padding: 0.3cm;
+    border: 1px black solid;
+    margin-bottom: 15px;
+}
+
+#topLeftFrame, #topLeftFrame_P2 {
+    float: left;
+    width: 25%;
+    height: 100%;
+}
+
+#topLeftImg, #topLeftImg_P2 {
+    vertical-align: middle;
+    width: 100%;
+}
+
+#topCentreFrame, #topCentreFrame_P2 {
+    float: left;
+    width: 50%;
+    height: 100%;
+    text-align: center;
+}
+
+    #topCentreFrame p, #topCentreFrame_P2 p {
+        margin: 0;
+        font: 10pt 'Arial';
+    }
+
+#topRightFrame, #topRightFrame_P2 {
+    float: left;
+    width: 25%;
+    height: 100%;
+}
+
+#topRightImg, #topRightImg_P2 {
+    vertical-align: middle;
+    width: 100%;
+}
+
+#titleRow, #titleRow_P2 {
+    margin-bottom: 10px;
+}
+
+#coordFrame table, td {
+    font: 10pt 'Arial';
+    border: 1px solid grey;
+    border-collapse: collapse;
+}
+
+#coordFrame col:first-child {
+    width: 50%;
+}
+
+#coordFrame td:nth-child(2) {
+    text-align: right;
+}
+
+#coordLeftFrame {
+    width: 49%;
+    float: left;
+    height: 14%;
+}
+
+#coordRightFrame {
+    width: 49%;
+    float: right;
+    height: 14%;
+}
+
+#leftFrame {
+    width: 49%;
+    height: 50%;
+    float: left;
+    text-align: center;
+}
+
+#rightFrame {
+    width: 49%;
+    height: 50%;
+    float: right;
+    text-align: center;
+}
+
+.contentBlockTop {
+    display: block;
+    width: 100%;
+    height: 200px;
+    text-align: center;
+}
+
+#tbDESCRIPCION {
+    height: 100%;
+}
+
+#saveDESCRIPCION {
+    visibility: hidden;
+    position: absolute;
+    z-index: 999;
+    margin-top: -50px;
+    margin-left: -15px;
+}
+
+.contentBlockBottom {
+    display: block;
+    width: 100%;
+    height: 400px;
+    text-align: center;
+}
+
+.contentBlockP2 {
+    display: block;
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.btnSave {
+    visibility: hidden;
+    position: absolute;
+    margin-top: 10px;
+    margin-left: -15px;
+    z-index: 999;
+}
+
+.btnSaveASP {
+    visibility: visible;
+    position: absolute;
+    margin-top: 10px;
+    margin-left: -15px;
+    z-index: 999;
+}
+
+.fa {
+    color: #F0F;
+}
+
+.fa-picture-o {
+    width: 100%;
+    font-size: 120px;
+    text-align: center;
+}
+
+textarea {
+    width: 100%;
+    height: 250px;
+    font: 9pt 'Arial';
+    resize: none;
+    background-color: white;
+    border: none;
+}
+
+.olImageLoadError {
+    display: none !important;
+}
+
+@media print {
+    .page {
+        margin: 0;
+    }
+}
